@@ -3,6 +3,16 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    behaviors {
+        mt_tap: hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT_HOLD";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            hold-tap-ms = <150>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -15,7 +25,7 @@
 
             bindings = <
 &kp GRAVE  &kp Q             &kp W               &kp F           &kp P           &kp B                                                      &kp J    &kp L            &kp U            &kp Y                &kp EQUAL          &kp MINUS
-&kp TAB    &mt LEFT_SHIFT A  &mt LEFT_CONTROL R  &mt LEFT_ALT S  &mt LEFT_GUI T  &kp G                                                      &kp M    &mt RIGHT_GUI N  &mt RIGHT_ALT E  &mt RIGHT_CONTROL I  &mt RIGHT_SHIFT O  &kp SEMICOLON
+&kp TAB    &mt_tap LEFT_SHIFT A  &mt_tap LEFT_CONTROL R  &mt_tap LEFT_ALT S  &mt_tap LEFT_GUI T  &kp G                                                      &kp M    &mt_tap RIGHT_GUI N  &mt_tap RIGHT_ALT E  &mt_tap RIGHT_CONTROL I  &mt_tap RIGHT_SHIFT O  &kp SEMICOLON
 &kp LSHFT  &kp Z             &kp X               &kp C           &kp D           &kp V    &mo 1      &kp ESCAPE  &kp ESCAPE  &mo 2          &kp K    &kp H            &kp COMMA        &kp DOT              &kp SLASH          &kp SQT
                                                  &kp LGUI        &kp DEL         &kp RET  &kp SPACE  &kp ENTER   &kp SPACE   &kp BACKSPACE  &kp TAB  &kp BSPC         &kp RALT
             >;
