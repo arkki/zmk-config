@@ -14,10 +14,10 @@
             //                     | GUI  | DEL  | RET  |  SPACE  |   ESC   |  |   RET   |  SPACE  | TAB  | BSPC  | R-ALT |
 
             bindings = <
-&kp GRAVE  &kp Q      &kp W      &kp F      &kp P      &kp B                                                      &kp J    &kp L      &kp U      &kp Y      &kp EQUAL  &kp MINUS
-&kp TAB    &kp LS(A)  &kp LA(R)  &kp LC(T)  &kp LG(G)  &kp G                                                      &kp M    &kp RG(N)  &kp RC(E)  &kp RA(I)  &kp RS(O)  &kp SEMICOLON
-&kp LSHFT  &kp Z      &kp X      &kp C      &kp D      &kp V    &mo 1      &kp ESCAPE  &kp ESCAPE  &mo 2          &kp K    &kp H      &kp COMMA  &kp DOT    &kp SLASH  &kp SQT
-                                 &kp LGUI   &kp DEL    &kp RET  &kp SPACE  &kp ENTER   &kp SPACE   &kp BACKSPACE  &kp TAB  &kp BSPC   &kp RALT
+&kp GRAVE  &kp Q             &kp W               &kp F           &kp P           &kp B                                                      &kp J    &kp L            &kp U            &kp Y                &kp EQUAL          &kp MINUS
+&kp TAB    &mt LEFT_SHIFT A  &mt LEFT_CONTROL R  &mt LEFT_ALT S  &mt LEFT_GUI T  &kp G                                                      &kp M    &mt RIGHT_GUI N  &mt RIGHT_ALT E  &mt RIGHT_CONTROL I  &mt RIGHT_SHIFT O  &kp SEMICOLON
+&kp LSHFT  &kp Z             &kp X               &kp C           &kp D           &kp V    &mo 1      &kp ESCAPE  &kp ESCAPE  &mo 2          &kp K    &kp H            &kp COMMA        &kp DOT              &kp SLASH          &kp SQT
+                                                 &kp LGUI        &kp DEL         &kp RET  &kp SPACE  &kp ENTER   &kp SPACE   &kp BACKSPACE  &kp TAB  &kp BSPC         &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
